@@ -1,0 +1,49 @@
+Irvin Carbajal 
+Lab 4
+3308-102
+
+https://github.com/irvanthony/Recitation-3308.git
+
+Github Name: irvanthony
+Partner's Github Name: jnoranbrock 
+
+1. -
+2. created on website
+3. git clone https://github.com/irvanthony/Recitation-3308.git Reciation-3308
+4. created on website
+5. git add Sample1.txt
+   git add Sample2.txt
+6. created on tags tab
+7. git push
+8. git checkout -b new-feature
+9. git add Sample3.txt
+   git add Sample4.txt
+10. git checkout master
+11. git commit -m "Adding two text files"
+12. git merge new-feature
+13. git checkout new-feature
+14. git push -u origin new-feature
+	git push
+15. Jonathan Noranbrock
+16. Granted on website
+17. -
+18.	vim README.md
+	git add README.md
+19.	git commit -m "This will probably cause a merge conflict"
+20. git push
+21. -
+22. git checkout master
+23. git commit -m "This will probably cause a merge conflict"
+24. -
+25. -
+26. git pull
+27. Opened the README.md on a text file and erased the two lines that were causing the conflict and then saved and went to commit the changes and push the file.
+28. git add README.md
+	git commit -m "This"
+	git push
+29. git log
+	git commit -m "Done"
+30. git push
+
+Notes: 
+Screenshot of conflict and log file in repository, Resolution answered in question 27. 

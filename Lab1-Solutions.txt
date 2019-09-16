@@ -1,0 +1,53 @@
+Irvin Carbajal
+
+1 mkdir cs3308
+2 mv cs3308 CSCI3308_102
+3 cd CSCI3308_102
+	cd Lab1
+4 -Hidden files are within folders/directories so we can just use the cd command:
+	cd emptyFiles
+	cd textFiles
+5 fightingRalphie.png
+	ls -lS
+6 1520 
+	cp bronzeRalphie.png ../tinyData
+	cp majesticRalphie.png ../tinyData
+	cd ../textFiles 
+	cp aliceinwonderland.txt ../tinyData
+	cd ../tinyData
+	ls -s
+7 1304
+	zip tinyData.zip bronzeRalphie.png majesticRalphie.png aliceinwonderland.txt
+	ls -s
+8 1520
+	tar -cvf tinyData.tar tinyData
+9 rmdir
+	rm -R tinyData
+	rm -R tinyData.zip
+10 tar -xvf
+	tar -xvf tinyData.tar
+	- there's also the option of tar -zxvf to extract tar.gz files.
+11 unzip
+	aliceinwonderland.txt vs little/aliceinwonderland
+	fiona.jpg vs little/fiona.jpg
+	- the difference is that the two files in little2.zip are within other directories.
+	- also, the order of the files is flipped
+12 find . -name target.txt
+	./emptyFolders/13/target.txt
+	./Desktop/DS/CSCI3308_102/Lab1/emptyFolders/13/target.txt
+13 head & tail 
+	touch MyShortStory
+	{ head -n 5 aliceinwonderland.txt; tail -n 5 theladywiththedog.txt; } > MyShortStory
+
+
+
+1 cat /etc/passwd | sort -n -t: +0
+2 cat /etc/passwd | sort -n -t: +3
+3 grep -l system /etc/passwd
+4 wc -w /etc/passwd
+5 users | sort -u
+6 users | sort -u > tmp
+
+
+
+

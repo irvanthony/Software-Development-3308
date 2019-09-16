@@ -1,0 +1,7 @@
+Irvin Carbajal
+
+Q: What are the things needed for Bootstrap to be loaded?
+A: The html document, two .css files(bootstrap.min.css, style.css), and three .js files (jquery-3.2.1.slim.js, popper.min.js, bootstrap.min.js)
+
+Q: How does Bootstrap's Grid system work?
+A: The grid consists 1-12 columns and the width of each will depend on the number on columns. Since you can only break it up to 12, and want three columns for example, each column can be 4 columns wide or every column can have a differnt width as long as the widths add up to 12. There is no finite number of rows allowed. In a grid system, there's different classes (xs, sm, md, lg) for different devices (phones, tables, labtops, and desktops). It 

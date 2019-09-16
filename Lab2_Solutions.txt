@@ -1,0 +1,66 @@
+Irvin Carbajal
+
+**Step 1:
+A. 
+diff scene1_v1.txt scene1_v2.txt
+
+B.
+The '>' represents the lines in the first file (in this case scene1_v1.txt)
+The '<' represents the lines in the second file (in this case scene1_v2.txt)
+
+C.
+diff -c scene1_v1.txt scene1_v2.txt
+The -c option displays all the lines in file followed by all the lines in file 2. File 1 is between *** symbols while file is between --- sybmbols. A '!' is displayed at the beginning of every line that is not in both files, or the differences.
+
+**Step 2:
+A.
+grep -n "pigeon" scene1_v1.txt
+
+B.
+diff scene1_v1.txt scene1_v2.txt | grep ">"
+
+**Step 3:
+A.
+cut -d ':' -s -f 1 scene1_v1.txt
+
+B. 
+diff scene1_v1.txt scene1_v2.txt | grep ">" | cut -d':' -s -f 1 
+
+**Step 4:
+A.
+uniq -d scene1_v1.txt
+
+B.
+diff scene1_v1.txt scene1_v2.txt | grep ">" | cut -d':' -s -f 1 | sort -d | uniq -c
+
+**Step 5:
+
+A.
+	1. 
+	sed 's/[A-Z a-z]//g' cryptic.txt
+	2.
+	sed 's/[0-9]/_/g' cryptic.txt
+	3. 
+
+B. 
+sed 's/4/a/g' cryptic.txt | sed 's/3/e/g' | sed 's/1/i/g'| sed 's/0/o/g' | sed 's/5/s/g' | sed 's/7/t/g'
+
+It can be done by outputting it to a file line by line which would not be efficient.
+
+**Step 6:
+A. 
+770
+grep '[0-9]\{3\}\-[0-9]\{3\}\-[0-9]\{4\}' regex_practice_data.txt | wc -l
+
+B.
+51
+grep '303-441-[0-9]\{4\}' regex_practice_data.txt | wc -l
+
+**Step 7:
+A.
+$5.38
+awk '{sum += $2}{tot += $6}  END {print "Ave:", tot/sum}' pizzaOrders.txt
+
+B.
+37.5%
+awk '{sum += $2}{cheese += $5}  END {print "Ave:", cheese/sum}' pizzaOrders.txt
